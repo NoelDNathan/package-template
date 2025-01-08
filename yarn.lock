@@ -61,25 +61,102 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@napi-rs/package-template@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "@napi-rs/package-template@workspace:."
+"@napi-rs/package-template-android-arm64@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@napi-rs/package-template-android-arm64@npm:1.0.0"
+  conditions: os=android & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@napi-rs/package-template-darwin-arm64@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@napi-rs/package-template-darwin-arm64@npm:1.0.0"
+  conditions: os=darwin & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@napi-rs/package-template-darwin-x64@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@napi-rs/package-template-darwin-x64@npm:1.0.0"
+  conditions: os=darwin & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@napi-rs/package-template-linux-arm-gnueabihf@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@napi-rs/package-template-linux-arm-gnueabihf@npm:1.0.0"
+  conditions: os=linux & cpu=arm
+  languageName: node
+  linkType: hard
+
+"@napi-rs/package-template-linux-arm64-gnu@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@napi-rs/package-template-linux-arm64-gnu@npm:1.0.0"
+  conditions: os=linux & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@napi-rs/package-template-linux-x64-gnu@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@napi-rs/package-template-linux-x64-gnu@npm:1.0.0"
+  conditions: os=linux & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@napi-rs/package-template-linux-x64-musl@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@napi-rs/package-template-linux-x64-musl@npm:1.0.0"
+  conditions: os=linux & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@napi-rs/package-template-win32-x64-msvc@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@napi-rs/package-template-win32-x64-msvc@npm:1.0.0"
+  conditions: os=win32 & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@napi-rs/package-template@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@napi-rs/package-template@npm:1.0.0"
   dependencies:
-    "@napi-rs/cli": "npm:^2.18.4"
-    "@swc-node/register": "npm:^1.10.6"
-    "@swc/core": "npm:^1.6.13"
-    "@taplo/cli": "npm:^0.7.0"
-    ava: "npm:^6.1.3"
-    chalk: "npm:^5.3.0"
-    husky: "npm:^9.0.11"
-    lint-staged: "npm:^15.2.7"
-    npm-run-all2: "npm:^7.0.0"
-    oxlint: "npm:^0.15.0"
-    prettier: "npm:^3.3.3"
-    tinybench: "npm:^3.0.0"
-    typescript: "npm:^5.5.3"
-  languageName: unknown
-  linkType: soft
+    "@napi-rs/package-template-android-arm64": "npm:^1.0.0"
+    "@napi-rs/package-template-darwin-arm64": "npm:^1.0.0"
+    "@napi-rs/package-template-darwin-x64": "npm:^1.0.0"
+    "@napi-rs/package-template-linux-arm-gnueabihf": "npm:^1.0.0"
+    "@napi-rs/package-template-linux-arm64-gnu": "npm:^1.0.0"
+    "@napi-rs/package-template-linux-x64-gnu": "npm:^1.0.0"
+    "@napi-rs/package-template-linux-x64-musl": "npm:^1.0.0"
+    "@napi-rs/package-template-win32-x64-msvc": "npm:^1.0.0"
+    "@node-rs/helper": "npm:^1.0.0"
+  dependenciesMeta:
+    "@napi-rs/package-template-android-arm64":
+      optional: true
+    "@napi-rs/package-template-darwin-arm64":
+      optional: true
+    "@napi-rs/package-template-darwin-x64":
+      optional: true
+    "@napi-rs/package-template-linux-arm-gnueabihf":
+      optional: true
+    "@napi-rs/package-template-linux-arm64-gnu":
+      optional: true
+    "@napi-rs/package-template-linux-x64-gnu":
+      optional: true
+    "@napi-rs/package-template-linux-x64-musl":
+      optional: true
+    "@napi-rs/package-template-win32-x64-msvc":
+      optional: true
+  checksum: 10c0/7d8d230dea32da86121e7341f91943e400b6145e51346da114e4ea25b4b487eacf2f0f7b605da6aa12a7c6b97c929d3cc9227a7a0e23a7062511ba231f98209a
+  languageName: node
+  linkType: hard
+
+"@napi-rs/triples@npm:^1.2.0":
+  version: 1.2.0
+  resolution: "@napi-rs/triples@npm:1.2.0"
+  checksum: 10c0/e8294cc63d36fe0b062dc5293a0a2c72ae9318676dd76168e969a8f47b95180e7fe80a301fc0d9c6688399494744bfe21275b58f247f2981b558898743389e0f
+  languageName: node
+  linkType: hard
 
 "@napi-rs/wasm-runtime@npm:^0.2.4":
   version: 0.2.4
@@ -89,6 +166,15 @@ __metadata:
     "@emnapi/runtime": "npm:^1.1.0"
     "@tybys/wasm-util": "npm:^0.9.0"
   checksum: 10c0/1040de49b2ef509db207e2517465dbf7fb3474f20e8ec32897672a962ff4f59872385666dac61dc9dbeae3cae5dad265d8dc3865da756adeb07d1634c67b03a1
+  languageName: node
+  linkType: hard
+
+"@node-rs/helper@npm:^1.0.0":
+  version: 1.6.0
+  resolution: "@node-rs/helper@npm:1.6.0"
+  dependencies:
+    "@napi-rs/triples": "npm:^1.2.0"
+  checksum: 10c0/f53211b36d0bfbf8ce98b57f2bbffeac6a59528f560a35db15aa5e4716957cd0407a6c08c54459815ccaaeb94bceb33122cf2ab72ff64503aa9e9a5b793ae548
   languageName: node
   linkType: hard
 
@@ -1507,6 +1593,27 @@ __metadata:
   checksum: 10c0/4bd164657711d9747ff5edb0508b2944414da3464b7fe21ac5c67cf35bba975c4b446a0124bd0f9a8be54cfc18faf92e92bd77563a20328b1ccf2ff04e9f39b9
   languageName: node
   linkType: hard
+
+"mental-poker-js@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "mental-poker-js@workspace:."
+  dependencies:
+    "@napi-rs/cli": "npm:^2.18.4"
+    "@napi-rs/package-template": "npm:^1.0.0"
+    "@swc-node/register": "npm:^1.10.6"
+    "@swc/core": "npm:^1.6.13"
+    "@taplo/cli": "npm:^0.7.0"
+    ava: "npm:^6.1.3"
+    chalk: "npm:^5.3.0"
+    husky: "npm:^9.0.11"
+    lint-staged: "npm:^15.2.7"
+    npm-run-all2: "npm:^7.0.0"
+    oxlint: "npm:^0.15.0"
+    prettier: "npm:^3.3.3"
+    tinybench: "npm:^3.0.0"
+    typescript: "npm:^5.5.3"
+  languageName: unknown
+  linkType: soft
 
 "merge-stream@npm:^2.0.0":
   version: 2.0.0

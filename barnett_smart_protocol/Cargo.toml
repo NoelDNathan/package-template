@@ -1,17 +1,9 @@
 [package]
-name = "barnett-smart-card-protocol"
-authors = ["LongYinan <lynweklm@gmail.com>"]
+name = "barnett_smart_protocol"
 version = "0.1.0"
 edition = "2021"
 
-[lib]
-crate-type = ["cdylib"]
-
 [dependencies]
-napi        = "2"
-napi-derive = "2"
-barnett_smart_protocol = { path = "./barnett_smart_protocol" }
-
 anyhow = "1.0.55"
 ark-crypto-primitives = "0.3.0"
 ark-ec = "0.3.0"
@@ -30,9 +22,3 @@ thiserror = "1.0.30"
 ark-bls12-377 = "0.3.0"
 byte-unit = "4.0.14"
 
-
-[build-dependencies]
-napi-build = "2"
-
-[profile.release]
-lto = true

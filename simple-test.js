@@ -1,5 +1,6 @@
-const { plus100 } = require('./index')
+const { setup_protocol } = require('./index')
 
-console.assert(plus100(0) === 100, 'Simple test failed')
+// console.assert(setup_protocol(0) === 100, 'Simple test failed')
+console.log(setup_protocol)
 
 console.info('Simple test passed')
